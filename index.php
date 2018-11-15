@@ -1,4 +1,5 @@
 <?php
+echo "<script>alert('Congratulation! You Create account successfully!')</script>";
 session_start();
 if (!empty($_SESSION['admin'])&&!empty($_SESSION['type'])) {
 	header("Location: admin/");
@@ -29,7 +30,8 @@ elseif (!empty($_SESSION['bursar'])&&!empty($_SESSION['type'])) {
 		.wrapper
 		{
 			height: 250px;
-			width: 700px;
+			width: 55.4%;
+			min-width: 11.8em;
 			background-color: white;
 			border: 1px solid #C2C5BA;
 			margin: 0 auto;
@@ -38,7 +40,8 @@ elseif (!empty($_SESSION['bursar'])&&!empty($_SESSION['type'])) {
 		.left
 		{
 			height: 170px;
-			width: 400px;
+			width: 57.1%;
+			min-width: 8.9em;
 			border-right: 1px solid #C2C5BA;
 			float: left;
 			font-family: Arial;
@@ -49,7 +52,8 @@ elseif (!empty($_SESSION['bursar'])&&!empty($_SESSION['type'])) {
 		.right
 		{
 			height: 250px;
-			width: 299px;
+			width: 42.7%;
+			min-width: 12em;
 			float: left;
 			text-align: center;
 			font-family: Arial;
